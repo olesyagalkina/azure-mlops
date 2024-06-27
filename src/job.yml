@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-code: https://github.com/olesyagalkina/azure-mlops/tree/main/src/model/train.py
+code: https://github.com/olesyagalkina/azure-mlops/blob/main/src/model/train.py
 command: >-
   python train.py --training_data ${{inputs.training_data}} --reg_rate ${{inputs.reg_rate}}
 inputs:
