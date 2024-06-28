@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-code: https://github.com/olesyagalkina/azure-mlops/blob/main/src/model/
+code: https://brinks4161432964.blob.core.windows.net/diabetes-data/
 command: >-
   python train.py --training_data ${{inputs.training_data}} --reg_rate ${{inputs.reg_rate}}
 inputs:
@@ -8,6 +8,6 @@ inputs:
     path: azureml:diabetes-dev-folder:2
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
-compute: azureml:olesya_comp
+compute: azureml:olesya-comp
 experiment_name: diabetes_experiment
 description: Train a diabetes model
